@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>신규 등록 상품</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    select, input[type="text"], button {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .pagination {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .pagination button {
+      padding: 6px 12px;
+      border: 1px solid #ddd;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .pagination .active {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>신규 등록 상품</h2>
+
+    <div class="search-bar">
+      <select>
+        <option value="">카테고리</option>
+        <option value="상의">상의</option>
+        <option value="하의">하의</option>
+        <option value="신발">신발</option>
+        <option value="패션잡화">패션잡화</option>
+      </select>
+      <input type="text" placeholder="제품명을 입력해주세요">
+      <button onclick="alert('조회 기능은 아직 구현되지 않았습니다.')">조회</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>카테고리</th>
+          <th>브랜드</th>
+          <th>상품명</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>상의</td>
+          <td>Supreme</td>
+          <td>슈프림 박스로고 후드티</td>
+          <td>390,000</td>
+        </tr>
+        <tr>
+          <td>하의</td>
+          <td>DIESEL</td>
+          <td>디젤 트랙 팬츠</td>
+          <td>188,000</td>
+        </tr>
+        <tr>
+          <td>신발</td>
+          <td>Nike</td>
+          <td>에어포스 1</td>
+          <td>137,000</td>
+        </tr>
+        <tr>
+          <td>패션잡화</td>
+          <td>Music&Goods</td>
+          <td>빵빵이 키링</td>
+          <td>29,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <button>Previous</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>Next</button>
+    </div>
+  </div>
+</body>
+</html>
