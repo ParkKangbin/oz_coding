@@ -37,3 +37,5 @@
   - 수정: `객체.필드 = 값; 객체.save()`
   - 삭제: `객체.delete()`
 - `python manage.py shell`로 실습 가능
+
+![ORM 실습 화면](./images/orm_example.png)
